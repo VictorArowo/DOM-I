@@ -2,6 +2,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(24, 137, 235);
+
 }
 
 .digit {
@@ -11,4 +13,35 @@ body {
 
 .redDigit {
   color: red;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 500px;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Lexend Giga', sans-serif;
+
+}
+
+button{
+  width: 150px;
+  height: 60px;
+  border: 1px solid rgb(24, 137, 235);
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Lexend Giga', sans-serif;
+
+}
+
+button:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+button:disabled{
+  cursor: not-allowed;
 }
