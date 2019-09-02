@@ -80,6 +80,7 @@ bottomContent.children[2].children[1].textContent = siteContent["main-content"][
 let contact = document.querySelector(".contact");
 for(let i = 0; i < 4; i++){
   contact.children[i].textContent = siteContent["contact"][Object.keys(siteContent["contact"])[i]];
+  contact.children[1].innerHTML = siteContent["contact"]["address"].split("t S").join("t<br/>S")
 }
 
 let footer = document.getElementsByTagName("footer");
